@@ -1,0 +1,522 @@
+<html lang="en"><head>
+  <title>Annie's Favorite Foods</title>
+  <!-- this scales the website to look good in any device-->
+  <meta name="viewport" content="width=devide-width, initial-scale=1.0">
+  <meta charset="UTF-8"> <!-- this tells website the character set used-->
+
+  <style>
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    margin: 10;
+  }
+
+  .header {
+    padding: 30px;
+    text-align: center;
+    background-color:rgba(173, 216, 230, 1);
+  }
+
+  .header h1 {
+    font-size: 50px;
+  }
+
+  .topnav {
+    overflow: hidden;
+    background-color: #333;
+  }
+
+  .topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+
+  .topnav a:hover {
+    background-color: #ddd;
+    color:black;
+  }
+
+  .column {
+    float: left;
+    padding: 0px;
+    background-color:rgba(173, 216, 230, 1)
+  }
+
+  .column.side {
+    width: 25%;
+  }
+
+  .column.right {
+    width: 75%;
+    padding: 10px
+  }
+
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .food {
+    background-color: lightblue;
+    color: white;
+    border: 2px lightblue;
+    margin: 20px;
+  }
+
+  .column.one {
+    float: left;
+    width: 33.33%;
+    height: 350px;
+    padding: 10px;
+    background-color:rgba(173, 216, 230, 1);
+  }
+
+  .column.two {
+    float: left;
+    width: 33.33%;
+    height: 350px;
+    padding: 10px;
+    background-color:rgba(173, 216, 230, 0.7);
+  }
+
+  .column.three {
+    float: left;
+    width: 33.33%;
+    height: 350px;
+    padding: 10px;
+    background-color:rgba(173, 216, 230, 0.4);
+  }
+
+  .column.four {
+    float:left;
+    width: 50%
+    padding: 0px;
+    background-color:rgba(173, 216, 230, 1);
+  }
+
+  .column.five {
+    float:left;
+    text-align:center;
+    width: 50%
+    padding: 10px;
+    background-color:rgba(173, 216, 230, 0.5);
+  }
+
+  .frame {
+    background-color:rgba(173, 216, 230, 1);
+    width: 500px;
+    height: 400px;
+    border: 12px solid lightblue;
+    padding: 10px;
+    margin: auto;
+  }
+
+  a:link {
+    color:white;
+  }
+
+  a:visited {
+    color:pink;
+  }
+
+  a:hover {
+    color:red;
+  }
+
+  a:active {
+    color:yellow;
+  }
+
+  .button {
+    border: none;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    margin: 2px;
+    background-color: gray;
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+  }
+
+  th, td {
+    padding: 15px;
+    width=50%;
+  }
+
+  th {
+    text-align: left;
+  }
+
+  #to1 {
+    width: 50%;
+    background-color: lightblue;
+    text-align: center;
+  }
+
+  #to1 th {
+    color: white;
+    background-color: black;
+    text-align: center;
+    font-size: 20px;
+  }
+
+  .container {
+    position: relative;
+    text-align: center;
+    color: white;
+    font-size: 70px;
+    font-style: italic;
+  }
+
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  @media screen and (max-width: 600px) {
+    .column.side, .column.middle {
+      width: 100%;
+    }
+  }
+
+  </style>
+  </head>
+  <body>
+    <div class="header">
+      <h1>Annie's Favorite Foods</h1>
+      <h2> These foods are superior.</h2>
+      <p style="font-size:20px;">Trust me.</p>
+    </div>
+
+    <div class="topnav">
+        <a href="#C1">Ramen</a>
+        <a href="#C2">Bibimbap</a>
+        <a href="#C3">Sushi</a>
+        <a href="#C4">Lemon Chicken</a>
+        <a href="#C5">Soup Dumplings</a>
+        <a href="#C6">Mochi</a>
+        <a href="#C7">Scones</a>
+        <a href="#C8">Bingsu</a>
+        <a href="#C9">Smoothie</a>
+        <a href="#C10">Cake</a>
+        <a href="#C11">Ranking</a>
+        <a href="news.html">News</a>
+    </div>
+
+  <!-- bookmarks for if website very long -->
+  <h2 id="C1">Ramen</h2>
+    <div class="food">
+      <div class="row">
+        <div class="column side">
+          <img src="ramen.jpg" alt="Image cannot be displayed" style="width:100%;">
+        </div>
+        <div class="column right">
+          <h2 style="color:black"> This is ramen. </h2>
+          <p> Ramen is (in oriental cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables.</p>
+        </div>
+      </div>
+    </div>
+    <p></p>
+
+  <!-- if you want to display ALL <p> or <h> elements a certain color, do this:
+  body {background-color: powderblue;}
+  <head>
+  <style>
+  h1   {color:blue;}
+  p    {color:red;}
+  </style>
+  </head>
+  <body> -->
+
+  <h2 id="C2">Bibimbap</h2>
+  <div class="row">
+    <div class="column one">
+      <h3>This is fat bibimbap.</h3>
+      <img src="bibimbap.jpg" alt="Bibimbap" width="100%" height="80%">
+    </div>
+    <div class="column two">
+      <h3>This is normal bibimbap.</h3>
+      <center><img src="bibimbap.jpg" alt="Bibimbap" style="width:80%;height:80%;"></center>
+    </div>
+    <div class="column three">
+      <h3>This is a bibimbap floating to the right.</h3>
+      <img src="bibimbap.jpg" alt="Coffee" style="float:right;width:60%;height:60%;">
+      <pre>        It
+        Is
+        Really
+        Good
+      </pre>
+    </div>
+  </div>
+
+  <h2 id="C3">Sushi</h2>
+  <div class="food">
+    <div class="row">
+      <div class="column side">
+        <a href="https://www.youtube.com/watch?v=TbB1lqdrlkc">
+          <img src="sushi.jpg" alt="Image cannot be displayed" style="width:100%;height:200px"></a>
+      </div>
+      <div class="column right">
+        <h2 style="color:black"> This is sushi. </h2>
+        <p><strong>Click</strong> on the sushi to watch it being made. </p>
+      </div>
+    </div>
+  </div>
+
+  <!--target="_self" = opens doc in same place it was clicked
+      target="_blank" = opens in new <table>
+      target="_parent" = opens in parent frame
+      target="_top" = opens in full body of the window -->
+  <!--  local links (page within the same website) don't need the "https://www" part-->
+
+  <h2 id="C4">Lemon Chicken</h2>
+  <div class="food">
+    <div class="row">
+      <div class="column four">
+        <a href="https://www.youtube.com/watch?v=r5kJ-NcS-6A">
+          <img src="chicken.jpg" alt="Lemon Chicken" style="width:100%;height:500px"></a>
+      </div>
+      <div class="column five">
+        <h1 style="color:black">This is <em><span style="color:yellow;font-weight:bold">lemon</span></em> chicken.</h1>
+          <h2>It is the same thing as <span style="color:orange;font-weight:bold">orange</span> chicken but it sounds fancier.</h2>
+          <h3> Click on the lemon chicken to watch it be made by a pro. </h3>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="C5">Soup Dumplings</h2>
+  <div class="row">
+    <div class="column one">
+      <h3>These are <mark>pork</mark> soup dumplings.</h3>
+      <img src="porkdumpling.jpg" alt="Pork Dumpling" width="100%" height="260px">
+    </div>
+    <div class="column two">
+      <h3>These are <mark>vegetable</mark> soup dumplings.</h3>
+      <center><img src="veggiedumpling.jpg" alt="Veggie Dumpling" width="65%" height="80%"></center>
+    </div>
+    <div class="column three">
+      <h3>These are <mark>dessert</mark> soup dumplings.</h3>
+      <img src="dessertdumpling.jpg" alt="Dessert Dumpling" width="100%" height="260px">
+    </div>
+  </div>
+
+  <h2 id="C6">Mochi</h2>
+  <h2> You will talk backwards like this after trying it: <bdo dir="rtl">SO GOOD!</bdo></h2>
+  <div class="food">
+    <div class="row">
+      <div class="column side">
+        <a href="https://www.youtube.com/watch?v=fM57RNUpd10">
+          <img src="mochi.jpg" alt="Mochi" style="width:100%;height:260px"></a>
+      </div>
+      <div class="column right">
+        <h2 style="color:black"> This is <del>really cute gelatinous rice</del> <ins>mochi</ins>. </h2>
+        <p><strong>Click</strong> on the mochi to watch it being made. </p>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="C7">Scones</h2>
+  <div class="food">
+    <div class="row">
+      <div class="column four">
+        <a href="https://www.foodnetwork.com/fn-dish/recipes/easy-recipes-for-scones">
+          <img src="scones.jpg" alt="Scones" style="width:80%"></a>
+      </div>
+      <div class="column five">
+        <h1 style="color:black"> Scones from foodnetwork.com</h1>
+        <p style="font-size:20px" <blockquote="" cite="https://www.foodnetwork.com/fn-dish/recipes/easy-recipes-for-scones">
+          They're the perfect treat to enjoy with coffee or tea.
+        </p>
+        <!--Remember that adding these quotes and abbreviations allows the browser to more easily navigate -->
+        <p>To achieve the best classic taste Katherine says she: <br>
+          <q>incorporated milk powder with the butter and cream.</q></p>
+        <p style="font-size:20px">The <abbr title="Foot Network">FN</abbr> was founded in 1993.</p>
+        <address>
+          Written by Katherine Lok.<br>
+        </address>
+      </div>
+    </div>
+  </div>
+
+  <div class="frame">
+    <center><p>Email Annie to ask why she likes scones</p></center><p></p>
+    <center><img src="bakery.jpg" alt="Bakery" style="width:100%;height:80%"></center>
+    <center><a href="mailto:fangannie3321@gmail.com" class="button">Email</a></center>
+  </div>
+
+  <h2 id="C8">Bingsu</h2>
+  <h3> Click on each bingsu for more information. </h3>
+  <div class="row">
+    <div class="column one">
+      <h3>This is matcha bingsu.</h3>
+      <center><img src="matchabingsu.jpg" alt="Matcha Bingsu" width="70%" height="260px" onclick="alert('Matcha bingsu is shaved ice with matcha powder.')"></center>
+    </div>
+    <div class="column two">
+      <h3>This is strawberry bingsu.</h3>
+      <center><img src="strawberrybingsu.jpg" alt="Strawberry Bingsu" width="65%" height="80%" onclick="alert('Strawberry bingsu is shaved ice with sliced strawberries.')"></center>
+    </div>
+    <div class="column three">
+      <h3>This is mango bingsu.</h3>
+      <center><img src="mangobingsu.jpg" alt="Mango Bingsu" width="80%" height="260px" onclick="alert('Mango bingsu is shaved ice with diced mangoes.')"></center>
+    </div>
+  </div>
+
+  <!-- not working, the image size isn't changing
+  <div style="background-image: url('macaron.jpg')"; style="width:50px;height:50px;">
+    <pre>
+      macaron
+      mAcaron
+      MAcaron
+      MaCarOn
+      MACaron
+      MacArON
+      MAcArOn
+      MACArOn
+      MACAROn
+      MACARoN
+      MACARON
+    </pre>
+  </div>
+    <!-- if you don't want background img to repeat type background-repeat: no-repeat;
+    to make sure the entire page is always covered set background-attachment: fixed;
+    to make sure the background img covers the entire thing, set background-size: cover -->
+
+  <h2 id="C9">Smoothie</h2>
+  <h3> Click on each smoothie for video demonstrations. </h3>
+  <div class="food">
+    <div class="row">
+      <div class="column side">
+        <a href="https://www.youtube.com/watch?v=uUv3cby4yMI">
+          <img src="bananasmoothie.jpg" alt="Image cannot be displayed" style="width:100%;height:250px"></a>
+      </div>
+      <div class="column right">
+        <h2> This is a banana smoothie. </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="food">
+    <div class="row">
+      <div class="column side">
+        <a href="https://www.youtube.com/watch?v=TJPhWB67_lA">
+          <img src="strawberrysmoothie.jpg" alt="Image cannot be displayed" style="width:100%;height:250px"></a>
+      </div>
+      <div class="column right">
+        <h2> This is a strawberry smoothie. </h2>
+      </div>
+    </div>
+  </div>
+
+  <div class="food">
+    <div class="row">
+      <div class="column side">
+        <a href="https://www.youtube.com/watch?v=YGmQR8yCT_0">
+          <img src="greensmoothie.jpg" alt="Image cannot be displayed" style="width:100%;height:250px;overflow:hidden"></a>
+      </div>
+      <div class="column right">
+        <h2> This is a green smoothie. </h2>
+      </div>
+    </div>
+  </div>
+
+  <h2 id="C10">Bomb 100€ Cake</h2>
+  <div class="frame">
+    <center><h2 id="myHeader">It is cake!</h2></center>
+    <center><img src="cake.jpg" alt="Image cannot be displayed" style="width:300px;height:300px" onclick="displayResult()"></center>
+  </div>
+  <br>
+
+  <script>
+  function displayResult() {
+    document.getElementById("myHeader").innerHTML = "It is cake!"
+  }
+  </script>
+
+  <!-- iframes lets you open a website inside a website -->
+  <center><iframe src="https://sallysbakingaddiction.com/vanilla-cake/" name="iframe_a" height="500px" width="80%" title="This is a cake recipe"></iframe></center>
+
+  <h2 id="C11">Ranking</h2>
+  <center><h1><em>Calories</em> of Annie's Favorite Foods</h1></center>
+  <center><table id="to1">
+    <tbody><tr> <!-- table row -->
+      <th>Food</th> <!-- table header-->
+      <th>Calories</th>
+    </tr>
+    <tr>
+      <td>Ramen</td> <!--table data/cell-->
+      <td>600 kcal</td>
+    </tr>
+    <tr>
+      <td>Bibimbap</td>
+      <td>450 kcal</td>
+    </tr>
+    <tr>
+      <td>Sushi</td>
+      <td>310 kcal</td>
+    </tr>
+    <tr>
+      <td>Dumplings</td>
+      <td>520 kcal</td>
+    </tr>
+    <tr>
+      <td>Mochi</td>
+      <td>230 kcal</td>
+    </tr>
+    <tr>
+      <td>Scones</td>
+      <td>250 kcal</td>
+    </tr>
+    <tr>
+      <td>Bingsu</td>
+      <td>870 kcal</td>
+    </tr>
+    <tr>
+      <td>Smoothie</td>
+      <td>240 kcal</td>
+    </tr>
+    <tr>
+      <td>Cake</td>
+      <td>770 kcal</td>
+    </tr>
+  </tbody></table></center><br>
+
+  <div class="container">
+    <img src="waffles.jpg" alt="Waffle" style="width:100%;height:200px">
+    <div class="centered">Honorable Mentions</div>
+  </div>
+  <!-- ol means orderered list-->
+  <!-- type="1" is for numbers, "A" is uppercase letters, "a" lowercase, "I" roman #s,"i" lowercase roman #s -->
+  <!-- you can also type start="50" to specify what number to start counting from-->
+  <ol type="1">
+    <li style="font-size: 30px">Fruit</li>
+    <hr>
+    <iframe src="https://www.ralphs.com/" name="iframe_a" style="float:right;width:40%;height:1150px;" title="This is a cake recipe"></iframe>
+    <p> So juicy and sweet but also guilt free! </p>
+    <img src="fruit.jpg" alt="Fruit" style="width:50%;height:300px">
+    <li style="font-size: 30px">Oatmeal</li>
+    <hr>
+    <p> Warm, cozy, and very customizable. </p>
+    <img src="oatmeal.jpg" alt="Oatmeal" style="width:50%;height:300px">
+    <li style="font-size: 30px">Cookies</li>
+    <hr>
+    <p> So flavorable and the chocolate chips melt in your mouth. </p>
+    <img src="cookies.jpg" alt="Cookies" style="width:50%;height:300px">
+  </ol>
+
+
+
+</body></html>

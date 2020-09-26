@@ -1,4 +1,18 @@
-<html lang="en"><head>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
   <link rel="stylesheet" href="mystyle.css">
   <title>Annie's Favorite Foods</title>
   <!-- this scales the website to look good in any device-->
@@ -8,8 +22,8 @@
 
   <body>
     <div class="header">
-      <h1>Annie's Favorite Foods</h1>
-      <h2> These foods are superior.</h2>
+      <h1 class="display-2">Annie's Favorite Foods</h1>
+      <h2 class="display-4"> These foods are superior.</h2>
       <p style="font-size:20px;">Trust me.</p>
     </div>
 
@@ -30,14 +44,16 @@
 
   <!-- bookmarks for if website very long -->
   <h2 id="C1">Ramen</h2>
-    <div class="food">
-      <div class="row">
-        <div class="column side">
-          <img src="ramen.jpg" alt="Image cannot be displayed" style="width:100%;">
-        </div>
-        <div class="column right">
-          <h2 style="color:black"> This is ramen. </h2>
-          <p> Ramen is (in oriental cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables.</p>
+    <div class="container-fluid my-3 border">
+      <div class="food">
+        <div class="row">
+          <div class="column side">
+            <img src="ramen.jpg" alt="Image cannot be displayed" style="width:100%;">
+          </div>
+          <div class="column right">
+            <h2 style="color:black"> This is ramen. </h2>
+            <p style="font-size:30px"> Ramen is (in oriental cuisine) quick-cooking noodles, typically served in a broth with meat and vegetables.</p>
+          </div>
         </div>
       </div>
     </div>
@@ -45,16 +61,13 @@
 
   <h2 id="C2">Bibimbap</h2>
   <div class="row">
-    <div class="column one">
-      <h3>This is fat bibimbap.</h3>
+    <div class="col-sm-4">This is a fat bibimbap.
       <img src="bibimbap.jpg" alt="Bibimbap" width="100%" height="80%">
     </div>
-    <div class="column two">
-      <h3>This is normal bibimbap.</h3>
+    <div class="col-sm-4">This is normal bibimbap.
       <center><img src="bibimbap.jpg" alt="Bibimbap" style="width:80%;height:80%;"></center>
     </div>
-    <div class="column three">
-      <h3>This is a bibimbap floating to the right.</h3>
+    <div class="col-sm-4">This is a bibimbap floating to the right.
       <img src="bibimbap.jpg" alt="Coffee" style="float:right;width:60%;height:60%;">
       <pre>
         It
@@ -231,50 +244,56 @@
   <!-- iframes lets you open a website inside a website -->
   <center><iframe src="https://sallysbakingaddiction.com/vanilla-cake/" name="iframe_a" height="500px" width="80%" title="This is a cake recipe"></iframe></center>
 
-  <h2 id="C11">Ranking</h2>
-  <center><h1><em>Calories</em> of Annie's Favorite Foods</h1></center>
-  <center><table id="to1">
-    <tbody><tr> <!-- table row -->
-      <th>Food</th> <!-- table header-->
-      <th>Calories</th>
-    </tr>
-    <tr>
-      <td>Ramen</td> <!--table data/cell-->
-      <td>600 kcal</td>
-    </tr>
-    <tr>
-      <td>Bibimbap</td>
-      <td>450 kcal</td>
-    </tr>
-    <tr>
-      <td>Sushi</td>
-      <td>310 kcal</td>
-    </tr>
-    <tr>
-      <td>Dumplings</td>
-      <td>520 kcal</td>
-    </tr>
-    <tr>
-      <td>Mochi</td>
-      <td>230 kcal</td>
-    </tr>
-    <tr>
-      <td>Scones</td>
-      <td>250 kcal</td>
-    </tr>
-    <tr>
-      <td>Bingsu</td>
-      <td>870 kcal</td>
-    </tr>
-    <tr>
-      <td>Smoothie</td>
-      <td>240 kcal</td>
-    </tr>
-    <tr>
-      <td>Cake</td>
-      <td>770 kcal</td>
-    </tr>
-  </tbody></table></center><br>
+  <div class="container">
+    <h2 id="C11">Ranking</h2>
+    <p class="font-weight-bold">Calories</em> of Annie's Favorite Foods</p>
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Food</th> <!-- table header-->
+          <th>Calories</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Ramen</td> <!--table data/cell-->
+          <td>600 kcal</td>
+        </tr>
+        <tr>
+          <td>Bibimbap</td>
+          <td>450 kcal</td>
+        </tr>
+        <tr>
+          <td>Sushi</td>
+          <td>310 kcal</td>
+        </tr>
+        <tr>
+          <td>Dumplings</td>
+          <td>520 kcal</td>
+        </tr>
+        <tr>
+          <td>Mochi</td>
+          <td>230 kcal</td>
+        </tr>
+        <tr>
+          <td>Scones</td>
+          <td>250 kcal</td>
+        </tr>
+        <tr>
+          <td>Bingsu</td>
+          <td>870 kcal</td>
+        </tr>
+        <tr>
+          <td>Smoothie</td>
+          <td>240 kcal</td>
+        </tr>
+        <tr>
+          <td>Cake</td>
+          <td>770 kcal</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
   <div class="container">
     <img src="waffles.jpg" alt="Waffle" style="width:100%;height:200px">
